@@ -34,10 +34,3 @@ Route::resource('buku', BukuController::class);
 Route::get('/blog', [BlogController::class, 'index']);
 Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
-Route::get('/blog/barang', [BlogController::class, 'barang_index']);
-
-Route::get('/blog/barang/create', [BlogController::class, 'barang_create']);
-Route::post('/blog/barang/store', [BlogController::class, 'barang_store']);
-Route::get('/blog/barang/edit/{id}', [BlogController::class, 'barang_edit']);
-Route::post('/blog/barang/update/{id}', [BlogController::class, 'barang_update']);
-Route::DELETE('/blog/barang/destroy/{id}', [BlogController::class, 'barang_destroy']);
